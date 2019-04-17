@@ -27,7 +27,7 @@ def mat_from_json(jsondata):
     shape = tuple(dictdata["shape"])
     return np.reshape(np.frombuffer(data,dtype=dtype),shape)
     
-vid = cv2.VideoCapture(0)
+vid = cv2.VideoCapture(0,)
 w = int(vid.get(cv2.CAP_PROP_FRAME_WIDTH))
 h = int(vid.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
